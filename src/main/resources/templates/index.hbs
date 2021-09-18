@@ -1,7 +1,57 @@
 {{#partial "content"}}
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <a class="navbar-brand" href="#"><img src="https://media.istockphoto.com/vectors/paw_print-vector-id931785704?k=20&m=931785704&s=612x612&w=0&h=wpnhxlh6HW0tRBxVIWynZMuJ-Lpp5rDRWjlVL2y_nt8=" alt="paw" id="navbar-brand">Wildlife<span class="text-success">Tracker</span></a>
 
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto navbar-links">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="/">Home</a>
+                 </li>
+
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="/" id="viewDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         View
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="/view/rangers">Ranger</a>
+                         <a class="dropdown-item" href="/view/animals">Animal</a>
+                         <a class="dropdown-item" href="/view/locations">Location</a>
+                         <a class="dropdown-item" href="/view/sightings">Sighting</a>
+                     </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="/" id="createDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Create
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="/create/ranger">Ranger</a>
+                         <a class="dropdown-item" href="/create/animal">Animal</a>
+                         <a class="dropdown-item" href="/create/location">Location</a>
+                         <a class="dropdown-item" href="/create/sighting">Sighting</a>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="form-group">
+             <input class="form-control form-control-sm mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success btn-sm" type="submit" id="search-btn">Search</button>
+          </div>
+        </form>
+      </div>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+       </button>
+    </nav>
     <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/07/25/12/stop-the-wildlife-trade-shaaz-jung-1.jpg?width=640&height=614&fit=bounds&format=pjpg&crop=16%3A9%2Coffset-y0.5&auto=webp&quality=75" alt="panther" class="img-fluid" id="header-bg">
     <div class="header-overlay"></div>
+    <div>
+       <p id="header-tag">
+         Take your <span style="color: #33b547">wildlife</span> <span style="color: #7dc53c">tracking</span> to new heights.
+       </p>
+    </div>
 {{/partial}}
 
 {{> layout.hbs}}
