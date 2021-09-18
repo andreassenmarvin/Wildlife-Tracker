@@ -24,5 +24,11 @@ public class App {
             Map<String,Object> model=new HashMap<String, Object>();
             return new ModelAndView(model,"index.hbs");
         },new HandlebarsTemplateEngine());
+
+        //animals
+        get("/create/animal",(request, response) -> {
+            Map<String,Object> model=new HashMap<String, Object>();
+            return new ModelAndView(model,"animals-form.hbs");
+        },new HandlebarsTemplateEngine());
     }
 }
