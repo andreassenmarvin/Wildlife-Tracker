@@ -62,5 +62,11 @@ public class App {
             model.put("endangered",typeChosen);
             return new ModelAndView(model,"animal-form.hbs");
         },new HandlebarsTemplateEngine());
+
+        get("/view/animals",(request, response) -> {
+            Map<String,Object> model=new HashMap<String, Object>();
+            model.put("animals",Animals.all());
+            return new ModelAndView(model,"animals.hbs");
+        },new HandlebarsTemplateEngine());
     }
 }
