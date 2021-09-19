@@ -37,6 +37,6 @@ No known bugs
 * Heroku
 ## Support and contact details
  Incase of any contributions,query or issues,you can reach me through the email below:
-*machariamarvin625@gmail.com*
+machariamarvin625@gmail.com
 ### License
 This project is licensed under the [MIT License](https://github.com/andreassenmarvin/Wildlife-Tracker/blob/master/LICENSE).
