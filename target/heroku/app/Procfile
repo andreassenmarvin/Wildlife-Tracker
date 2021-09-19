@@ -1,1 +1,0 @@
-web: java -jar target/tracker-wildlife-1.0-SNAPSHOT-jar-with-dependencies.jar
