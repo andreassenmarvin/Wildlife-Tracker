@@ -1,9 +1,8 @@
 import org.sql2o.*;
 import org.sql2o.Sql2oException;
 
-import java.util.List;
+public class EndangeredAnimals extends Animals implements DatabaseManagement {
 
-public class EndangeredAnimals extends Animals implements DBmanagement {
     private String health;
     private String age;
     public static final String HEALTH_HEALTHY="healthy";
@@ -36,6 +35,7 @@ public class EndangeredAnimals extends Animals implements DBmanagement {
             throw new IllegalArgumentException("Fields cannot be empty");
         }
         try (Connection con=DB.sql2o.open()){
+
 
             String sql ="INSERT INTO animals (name,type,health,age) VALUES (:name,:type,:health,:age)";
 

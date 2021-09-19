@@ -15,12 +15,13 @@ public class Sightings {
     private Date date= new Date();
     private Timestamp time;
 
+
+
     public Sightings(int location_id, int ranger_id, int animal_id) {
         this.location_id = location_id;
         this.ranger_id = ranger_id;
         this.animal_id = animal_id;
         this.time = new Timestamp(date.getTime());
-
     }
 
     public int getId() {
@@ -79,7 +80,6 @@ public class Sightings {
         }catch (Sql2oException ex){
             System.out.println(ex);
         }
-
     }
 
     public void save(){
@@ -111,6 +111,7 @@ public class Sightings {
             System.out.println(ex);
         }
     }
+
 
     @Override
     public  boolean equals(Object anotherSightings){

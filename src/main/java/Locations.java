@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class Locations {
-
     private int id;
     private  String name;
 

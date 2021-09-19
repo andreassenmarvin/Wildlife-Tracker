@@ -1,17 +1,15 @@
 import org.sql2o.*;
 import org.sql2o.Sql2oException;
-
 import java.util.List;
 import java.util.Objects;
 
-public class Animals implements DBmanagement {
-
+public class Animals implements DatabaseManagement {
     public int id;
     public String name;
     public String type;
     private String health;
     private String age;
-    public static final String ANIMAL_TYPE="normal";
+    static final String ANIMAL_TYPE="normal";
 
     public Animals(String name,String type) {
         this.name = name;
@@ -41,11 +39,10 @@ public class Animals implements DBmanagement {
     }
 
     public void save(){
-        if(this.name.equals("")||this.type.equals("")||this.name.equals(null)||this.type.equals(null)){
+        if(this.name.equals("") || this.type.equals("")){
             throw new IllegalArgumentException("Fields cannot be empty");
         }
         try (Connection con=DB.sql2o.open()){
-
 
             String sql ="INSERT INTO animals (name,type) VALUES (:name,:type)";
 
@@ -57,7 +54,6 @@ public class Animals implements DBmanagement {
         }catch (Sql2oException ex){
             System.out.println(ex);
         }
-
     }
 
     public void update(int id,String type,String health,String age) {
@@ -100,9 +96,7 @@ public class Animals implements DBmanagement {
                     .throwOnMappingFailure(false)
                     .executeAndFetchFirst(Animals.class);
             return animal;
-
         }
-
     }
 
     public void delete(){
@@ -124,7 +118,6 @@ public class Animals implements DBmanagement {
         }  catch (Sql2oException e){
             System.out.println(e);
         }
-
     }
     public static List<Animals> all(){
         try (Connection con=DB.sql2o.open()) {
@@ -132,7 +125,6 @@ public class Animals implements DBmanagement {
             return con.createQuery(sql)
                     .throwOnMappingFailure(false)
                     .executeAndFetch(Animals.class);
-
         }
     }
 

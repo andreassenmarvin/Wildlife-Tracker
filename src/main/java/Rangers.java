@@ -112,7 +112,6 @@ public class Rangers {
                 throw new IllegalArgumentException("Ranger has no sighting");
             }
             else {return sightings;}
-
         }
     }
 

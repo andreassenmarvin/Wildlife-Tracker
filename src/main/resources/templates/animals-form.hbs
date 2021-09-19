@@ -9,18 +9,6 @@
                   </li>
 
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="viewDropdown"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          View
-                      </a>
-                      <div class="dropdown-menu" id="dropdown1" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="/view/rangers">Rangers</a>
-                          <a class="dropdown-item" href="/view/animals">Animals</a>
-                          <a class="dropdown-item" href="/view/locations">Locations</a>
-                          <a class="dropdown-item" href="/view/sightings">Sightings</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="createDropdown"
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Create
@@ -30,6 +18,18 @@
                           <a class="dropdown-item" href="/create/animal">Animals</a>
                           <a class="dropdown-item" href="/create/location">Locations</a>
                           <a class="dropdown-item" href="/create/sighting">Sightings</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="viewDropdown"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          View
+                      </a>
+                      <div class="dropdown-menu" id="dropdown1" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/view/rangers">Rangers</a>
+                          <a class="dropdown-item" href="/view/animals">Animals</a>
+                          <a class="dropdown-item" href="/view/locations">Locations</a>
+                          <a class="dropdown-item" href="/view/sightings">Sightings</a>
                       </div>
                   </li>
               </ul>
@@ -68,7 +68,8 @@
                 </div>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control form-control-lg" id="animals-name" name="name" placeholder="Input Animal's Name..." required>
+                    <input type="text" class="form-control form-control-lg" id="animals-name" name="name" placeholder="Input Animal's Name..."
+                    required style="font-size: 14px; text-transform: capitalize">
                 </div>
                 <div class="form-group">
                     <div class="input-group mb-3">
@@ -119,7 +120,8 @@
                 </div>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control form-control-lg" class="animals-name" name="name" placeholder="Input Animal's Name..." required>
+                    <input type="text" class="form-control form-control-lg" class="animals-name" name="name" placeholder="Input Animal's Name..."
+                    required style="font-size: 14px; text-transform: capitalize">
                 </div>
 
             {{/if}}
