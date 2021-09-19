@@ -1,9 +1,11 @@
 import org.sql2o.*;
 import org.sql2o.Sql2oException;
+
 import java.util.List;
 import java.util.Objects;
 
 public class Animals extends DBmanagement {
+
     public int id;
     public String name;
     public String type;

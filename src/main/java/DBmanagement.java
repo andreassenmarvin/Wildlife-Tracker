@@ -1,13 +1,5 @@
-public class DBmanagement {
-    public boolean equals(Object o) {
-        return false;
-    }
-
-    void save() {
-
-    }
-
-    void delete() {
-
-    }
+public interface DBmanagement {
+    boolean equals(Object o);
+    void save();
+    void delete();
 }
