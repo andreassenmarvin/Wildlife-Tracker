@@ -1,5 +1,5 @@
 # WILDLIFE TRACKER
-#### Wildlife Tracker is an app that allows rangers to track wildlife sightings.You can create rangers,locations,animals and sightings, and view them as well.One can also view sightings a ranger has made and locations with the sightings that have occurred in them.
+Wildlife Tracker is an app that allows rangers to track wildlife sightings.You can create rangers,locations,animals and sightings, and view them as well.One can also view sightings a ranger has made and locations with the sightings that have occurred in them.
 ## Description
 ![Website image](/Assets/README/scr1.png)
 ![Website image](/Assets/README/scr2.png)
@@ -16,7 +16,7 @@
    $ gradle run
 ```
 ## Database Setup Instructions
-### In PSQL:
+##### In PSQL:
 * CREATE DATABASE wildlife_tracker;
 * CREATE TABLE animals (id serial PRIMARY KEY, name varchar,type varchar,health varchar,age varchar);
 * CREATE TABLE locations (id serial PRIMARY KEY,name varchar);
@@ -25,7 +25,7 @@
 
 * CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 ## Known Bugs
-#### No known bugs
+No known bugs
 ## Technologies Used
 * Handlebars
 * CSS
@@ -36,8 +36,7 @@
 * PostgreSQL
 * Heroku
 ## Support and contact details
-#### Incase of any contributions,query or issues,you can reach me through the email below:
+ Incase of any contributions,query or issues,you can reach me through the email below:
 *machariamarvin625@gmail.com*
 ### License
 This project is licensed under the [MIT License](https://github.com/andreassenmarvin/Wildlife-Tracker/blob/master/LICENSE).
-Copyright (c) 2021 **MARVIN MACHARIA**
