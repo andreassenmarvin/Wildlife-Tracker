@@ -537,3 +537,15 @@ footer{
    margin: 420px auto 40px;
    padding: 18px 0 0 0;
 }
+
+#create-sighting-form {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: solid 2px #474544;
+   width: 250px;
+   height: auto;
+   margin: 420px auto 40px;
+   padding: 18px 0 0 0;
+}
