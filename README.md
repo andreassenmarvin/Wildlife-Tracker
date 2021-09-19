@@ -21,7 +21,7 @@ Wildlife Tracker is an app that allows rangers to track wildlife sightings.You c
 * CREATE TABLE animals (id serial PRIMARY KEY, name varchar,type varchar,health varchar,age varchar);
 * CREATE TABLE locations (id serial PRIMARY KEY,name varchar);
 * CREATE TABLE rangers (id serial PRIMARY KEY,name varchar,badge_number varchar);
-* CREATE TABLE sightings (id serial PRIMARY KEY,animal_id int,ranger_id int,location_id int,time TIMESTAMP);
+* CREATE TABLE sightings (id serial PRIMARY KEY,animal_id int,ranger_id int,location_id int,time timestamp);
 
 * CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 ## Known Bugs
