@@ -1,9 +1,15 @@
+*{
+  box-sizing: border-box;
+   margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behaviour: smooth;
 }
 
 body {
-    font-family: 'Crimson Text',serif
+    font-family: 'Crimson Text',serif;
     max-width: 100%;
     height: 100vw;
 }
@@ -98,7 +104,7 @@ textarea {
   border: solid 2px #474544;
   max-width: 768px;
   height: auto;
-  margin: 300px auto;
+  margin: 300px auto 50px;
   padding: 20px 0 0 0;
 }
 
@@ -117,8 +123,8 @@ h1 {
 
 .underline {
   border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
+  margin: 10px auto 0;
+  width: 150px;
 }
 
 .icon_wrapper {
@@ -284,5 +290,176 @@ textarea {
 
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
+  }
+}
+
+footer{
+  position: relative;
+  z-index: 3;
+  bottom: 0px;
+  padding: 10px;
+  width: 100%;
+  background: #111;
+  color: white;
+}
+
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #33b547;
+  top: -10px;
+}
+.left .content p{
+  width: 300px;
+  letter-spacing: 0.05em;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #33b547;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #33b547;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #33b547;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #33b547;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
   }
 }
