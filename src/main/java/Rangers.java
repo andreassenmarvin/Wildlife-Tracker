@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class Rangers {
-
     private int id;
     private String name;
     private String badge_number;
