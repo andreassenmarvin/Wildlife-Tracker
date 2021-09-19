@@ -405,15 +405,15 @@ footer{
 .right form .msg{
   margin-top: 10px;
 }
-.right form input, .right form textarea{
+.right form input{
   width: 100%;
   font-size: 1.0625rem;
+  text-transform: lowercase;
   background: #151515;
   padding-left: 10px;
   border: 1px solid #222222;
 }
-.right form input:focus,
-.right form textarea:focus{
+.right form input:focus{
   outline-color: #3498db;
 }
 .right form input{

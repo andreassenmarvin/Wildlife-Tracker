@@ -16,4 +16,10 @@ $(function () {
         alert("We have received your message.Thank you!");
         $("#contact_form").trigger("reset");
     })
+
+    $(".subscribe-form").submit(function(event) {
+        event.preventDefault();
+        alert("Thank you for subscribing!You'll be receiving latest updates regularly.");
+        $(".subscribe-form").trigger("reset");
+    })
  })
