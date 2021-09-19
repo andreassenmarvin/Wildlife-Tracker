@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: RangersTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.079 sec <<< FAILURE! - in RangersTest
+entriesAreDeleted(RangersTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+allSightingsAreReturnedForRanger(RangersTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+createInstanceOfRangersClass_true(RangersTest)  Time elapsed: 0 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+findById(RangersTest)  Time elapsed: 0.017 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+entryIsUpdatedCorrectly(RangersTest)  Time elapsed: 0.017 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+allEntriesAreSaved(RangersTest)  Time elapsed: 0.022 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+emptyFieldsAreNotSaved(RangersTest)  Time elapsed: 0.021 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+

@@ -1,10 +1,12 @@
 # WILDLIFE TRACKER
 Wildlife Tracker is an app that allows rangers to track wildlife sightings.You can create rangers,locations,animals and sightings, and view them as well.One can also view sightings a ranger has made and locations with the sightings that have occurred in them.
 ## Description
-![Website image](/Assets/README/scr1.png)
-![Website image](/Assets/README/scr2.png)
-![Website image](/Assets/README/scr3.png)
-![Website image](/Assets/README/scr4.png)
+![Website image](src/images/README/scr1.png)
+![Website image](src/images/README/scr2.png)
+![Website image](src/images/README/scr4.png)
+![Website image](src/images/README/scr5.png)
+![Website image](src/images/README/scr6.png)
+![Website image](src/images/README/scr7.png)
 ## Setup/Installation Requirements
 * Fork/Clone the repository
 ```

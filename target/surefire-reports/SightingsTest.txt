@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: SightingsTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.253 sec <<< FAILURE! - in SightingsTest
+Sightings_instantiatesWithLocationId_int(SightingsTest)  Time elapsed: 0.011 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+findSightingByID(SightingsTest)  Time elapsed: 0.033 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+Sightings_instantiatesWithAnimalId_int(SightingsTest)  Time elapsed: 0.007 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+Sightings_instantiatesWithRangerId_int(SightingsTest)  Time elapsed: 0.012 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+createInstanceOfSightingsClass_true(SightingsTest)  Time elapsed: 0.009 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+deleteAll(SightingsTest)  Time elapsed: 0.074 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+allInstancesAreSaved(SightingsTest)  Time elapsed: 0.036 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+equals_returnsTrueIfNameHealthTypeAndAgeAreSame_true(SightingsTest)  Time elapsed: 0.013 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
+deleteSightingByID(SightingsTest)  Time elapsed: 0.04 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: relation "sightings" does not exist
+  Position: 13
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: relation "sightings" does not exist
+  Position: 13
+
