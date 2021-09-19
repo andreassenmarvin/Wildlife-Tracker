@@ -1,0 +1,131 @@
+{{#partial "content"}}
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+       <a class="navbar-brand" href="/"><img src="https://media.istockphoto.com/vectors/paw_print-vector-id931785704?k=20&m=931785704&s=612x612&w=0&h=wpnhxlh6HW0tRBxVIWynZMuJ-Lpp5rDRWjlVL2y_nt8=" alt="paw" id="navbar-brand">Wildlife<span class="text-success">Tracker</span></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbar-links">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="viewDropdown"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          View
+                      </a>
+                      <div class="dropdown-menu" id="dropdown1" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/view/rangers">Rangers</a>
+                          <a class="dropdown-item" href="/view/animals">Animals</a>
+                          <a class="dropdown-item" href="/view/locations">Locations</a>
+                          <a class="dropdown-item" href="/view/sightings">Sightings</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="createDropdown"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Create
+                      </a>
+                      <div class="dropdown-menu" id="dropdown2" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/create/ranger">Rangers</a>
+                          <a class="dropdown-item" href="/create/animal">Animals</a>
+                          <a class="dropdown-item" href="/create/location">Locations</a>
+                          <a class="dropdown-item" href="/create/sighting">Sightings</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+         <form class="form-inline my-2 my-lg-0">
+           <div class="form-group">
+              <input class="form-control form-control-sm mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success btn-sm" type="submit" id="search-btn">Search</button>
+           </div>
+         </form>
+       </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <img src="https://nationaltoday.com/wp-content/uploads/2021/07/International-Tiger-Day.jpg" alt="Tiger" class="img-fluid animals-header">
+    <div class="container" id="create-ranger-form">
+        <form action="/create/ranger/new" method="post">
+            <h2 class="create-animal-title">Create Ranger</h2>
+            <hr>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control form-control-lg rangers-input" id="name" name="name" placeholder="Input Name..."
+                required style="font-size: 14px; text-transform: capitalize">
+            </div>
+            <div class="form-group">
+                <label for="badge">Badge Number</label>
+                <input type="text" class="form-control form-control-lg rangers-input" id="badge" name="badge" placeholder="Input Badge Number..."
+                required style="font-size: 14px; text-transform: capitalize">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control form-control-lg rangers-input" id="phone" name="phone" placeholder="Input Phone Number..."
+                       required style="font-size: 14px; text-transform: capitalize">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm create-animal-btn"> Create </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+                  <div class="main-content">
+                    <div class="left box">
+                      <h2>About us</h2>
+                      <div class="content">
+                        <p>Wildlife Tracker is an app that allows rangers to track wildlife sightings.You can create rangers,locations,animals and sightings, and view them as well.
+                        One can also view sightings a ranger has made and locations with the sightings that have occurred in them.</p>
+                        <div class="social">
+                          <a href="#"><span class="fab fa-facebook-f"></span></a>
+                          <a href="#"><span class="fab fa-twitter"></span></a>
+                          <a href="#"><span class="fab fa-instagram"></span></a>
+                          <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="center box">
+                      <h2>Address</h2>
+                      <div class="content">
+                        <div class="place">
+                          <span class="fas fa-map-marker-alt"></span>
+                          <span class="text">Scranton,Pennsylvania</span>
+                        </div>
+                        <div class="phone">
+                          <span class="fas fa-phone-alt"></span>
+                          <span class="text">+254759082650</span>
+                        </div>
+                        <div>
+                          <span class="fas fa-envelope"></span>
+                          <span class="text">wildtrackers@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right box">
+                      <h2>Subscribe</h2>
+                      <div class="content">
+                        <form class="subscribe-form">
+                          <div class="msg">
+                            <div class="text">Name *</div>
+                            <input type="text" required style="padding: 10px">
+                          </div>
+                          <div>
+                            <div class="text">Email *</div>
+                            <input type="email" required style="padding: 10px">
+                          </div>
+                            <button type="submit" class="btn btn-outline-success btn-sm" style="color: white;height: 35px">Subscribe</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <center>
+                      <span class="credit">Created By <a href="#">Marvin Macharia</a> | </span>
+                      <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+                    </center>
+                  </div>
+          </footer>
+{{/partial}}
+{{> layout.hbs}}

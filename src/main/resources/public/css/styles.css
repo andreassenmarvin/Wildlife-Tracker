@@ -484,13 +484,13 @@ footer{
     height: 50vh;
 }
 
-#create-animal-title {
+.create-animal-title {
     display: block;
     font-size: 23px;
     margin: auto;
 }
 
-#create-animal-btn {
+.create-animal-btn {
     display: block;
     margin: auto;
     width: 60px;
@@ -498,13 +498,13 @@ footer{
     font-size: 14px;
 }
 
-#animals-name {
+.animals-name {
     font-size: 15px;
     text-transform: capitalize;
     padding: 5px;
 }
 
-#animals-name:focus {
+.animals-name:focus {
     outline: none;
 }
 
@@ -512,5 +512,17 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+#create-ranger-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #474544;
+    width: 230px;
+    height: auto;
+    margin: 420px auto 40px;
+    padding: 18px 0 0 0;
 }
 
