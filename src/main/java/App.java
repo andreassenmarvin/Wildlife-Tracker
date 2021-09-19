@@ -32,7 +32,7 @@ public class App {
         //ranger
         get("/create/ranger",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
-            return new ModelAndView(model,"ranger-form.hbs");
+            return new ModelAndView(model,"rangers-form.hbs");
         },new HandlebarsTemplateEngine());
 
         post("/create/ranger/new",(request, response) -> {
@@ -42,12 +42,12 @@ public class App {
             String phone_number=request.queryParams("phone");
             Rangers ranger=new Rangers(name,badge_number,phone_number);
             ranger.save();
-            return new ModelAndView(model,"ranger-form.hbs");
+            return new ModelAndView(model,"rangers-form.hbs");
         },new HandlebarsTemplateEngine());
         get("/view/rangers",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             model.put("rangers",Rangers.all());
-            return new ModelAndView(model,"ranger-view.hbs");
+            return new ModelAndView(model,"rangers.hbs");
         },new HandlebarsTemplateEngine());
         get("/view/ranger/sightings/:id",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
@@ -66,7 +66,7 @@ public class App {
             model.put("animals",animals);
             model.put("types",types);
             model.put("rangers",Rangers.all());
-            return new ModelAndView(model,"ranger-view.hbs");
+            return new ModelAndView(model,"rangers.hbs");
         },new HandlebarsTemplateEngine());
 
 
@@ -74,7 +74,7 @@ public class App {
         //animals
         get("/create/animal",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
-            return new ModelAndView(model,"animal-form.hbs");
+            return new ModelAndView(model,"animals-form.hbs");
         },new HandlebarsTemplateEngine());
 
         post("/create/animal/new",(request, response) -> {
@@ -96,7 +96,7 @@ public class App {
                 animal.save();
             }
 
-            return new ModelAndView(model,"animal-form.hbs");
+            return new ModelAndView(model,"animals-form.hbs");
         },new HandlebarsTemplateEngine());
 
 
@@ -114,13 +114,13 @@ public class App {
             model.put("age",age);
             String typeChosen="endangered";
             model.put("endangered",typeChosen);
-            return new ModelAndView(model,"animal-form.hbs");
+            return new ModelAndView(model,"animals-form.hbs");
         },new HandlebarsTemplateEngine());
 
         get("/view/animals",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             model.put("animals",Animals.all());
-            return new ModelAndView(model,"animal-view.hbs");
+            return new ModelAndView(model,"animals.hbs");
         },new HandlebarsTemplateEngine());
 
 
@@ -128,7 +128,7 @@ public class App {
         //location
         get("/create/location",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
-            return new ModelAndView(model,"location-form.hbs");
+            return new ModelAndView(model,"locations-form.hbs");
         },new HandlebarsTemplateEngine());
 
         post("/create/location/new",(request, response) -> {
@@ -141,12 +141,12 @@ public class App {
                 System.out.println(e);
             }
 
-            return new ModelAndView(model,"location-form.hbs");
+            return new ModelAndView(model,"locations-form.hbs");
         },new HandlebarsTemplateEngine());
         get("/view/locations",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             model.put("locations",Locations.all());
-            return new ModelAndView(model,"location-view.hbs");
+            return new ModelAndView(model,"locations.hbs");
         },new HandlebarsTemplateEngine());
 
         get("/view/location/sightings/:id",(request, response) -> {
@@ -166,7 +166,7 @@ public class App {
             model.put("animals",animals);
             model.put("types",types);
             model.put("locations",Locations.all());
-            return new ModelAndView(model,"location-view.hbs");
+            return new ModelAndView(model,"locations.hbs");
         },new HandlebarsTemplateEngine());
 
 
@@ -177,7 +177,7 @@ public class App {
             model.put("rangers",Rangers.all());
             model.put("locations",Locations.all());
             model.put("animals",Animals.all());
-            return new ModelAndView(model,"sighting-form.hbs");
+            return new ModelAndView(model,"sightings-form.hbs");
         },new HandlebarsTemplateEngine());
 
         post("/create/sighting/new",(request, response) -> {
@@ -188,7 +188,7 @@ public class App {
 
             Sightings sighting=new Sightings(location_id,ranger_id,animal_id);
             sighting.save();
-            return new ModelAndView(model,"sighting-form.hbs");
+            return new ModelAndView(model,"sightings-form.hbs");
         },new HandlebarsTemplateEngine());
 
         get("/view/sightings",(request, response) -> {
@@ -205,7 +205,7 @@ public class App {
             model.put("sightings",sightings);
             model.put("animals",animals);
             model.put("types",types);
-            return new ModelAndView(model,"sighting-view.hbs");
+            return new ModelAndView(model,"sightings.hbs");
         },new HandlebarsTemplateEngine());
     }
 }

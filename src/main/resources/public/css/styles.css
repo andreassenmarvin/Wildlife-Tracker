@@ -10,8 +10,9 @@ html {
 
 body {
     font-family: 'Crimson Text',serif;
+    width: 100%;
     max-width: 100%;
-    height: 100vw;
+    height: 100%;
 }
 
 #header-bg {
@@ -58,6 +59,7 @@ body {
     font-size: 16px
 }
 
+
 #search-input {
     width: 200px;
     height: 30px;
@@ -100,7 +102,6 @@ textarea {
 }
 
 #container {
-  position: relative;
   border: solid 2px #474544;
   max-width: 768px;
   height: auto;
@@ -296,7 +297,7 @@ textarea {
 footer{
   position: relative;
   z-index: 3;
-  bottom: 0px;
+  bottom: 0;
   padding: 10px;
   width: 100%;
   background: #111;
@@ -463,3 +464,53 @@ footer{
     margin: 5px 0;
   }
 }
+
+#create-animal-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #474544;
+    width: 250px;
+    height: auto;
+    margin: 420px auto 40px;
+    padding: 20px 0 0 0;
+}
+
+.animals-header {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#create-animal-title {
+    display: block;
+    font-size: 23px;
+    margin: auto;
+}
+
+#create-animal-btn {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 35px;
+    font-size: 14px;
+}
+
+#animals-name {
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+#animals-name:focus {
+    outline: none;
+}
+
+.animals-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+

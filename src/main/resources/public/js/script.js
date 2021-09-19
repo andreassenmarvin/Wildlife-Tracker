@@ -22,4 +22,18 @@ $(function () {
         alert("Thank you for subscribing!You'll be receiving latest updates regularly.");
         $(".subscribe-form").trigger("reset");
     })
+
+    $("#viewDropdown").click(function() {
+        $("#dropdown1").slideToggle();
+        $("#dropdown2").slideUp();
+    })
+
+    $("#createDropdown").click(function() {
+        $("#dropdown2").slideToggle();
+        $("#dropdown1").slideUp();
+    })
+
+    $("#navbar-toggler-icon").click(function() {
+        $("#navbarSupportedContent").slideToggle();
+    })
  })
